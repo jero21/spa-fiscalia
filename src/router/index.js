@@ -1,15 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import Inicio from '@/components/Causas/Causas'
+import CausasForm from '@/components/Causas/Form'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Inicio',
+      path: '/inicio',
+      component: Inicio,
+      children: [
+        {
+          path: 'crear',
+          component: CausasForm
+        }
+      ]
     }
+    // { path: '*', component: Inicio }
   ]
 })
+
+export default router
