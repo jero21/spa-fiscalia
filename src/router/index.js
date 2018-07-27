@@ -8,8 +8,7 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
-      name: 'Inicio',
-      path: '/inicio',
+      path: '/',
       component: Inicio,
       children: [
         {

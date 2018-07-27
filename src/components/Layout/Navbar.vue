@@ -8,7 +8,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <router-link tag="li" :to="'/inicio'" :ref="'Causas'" class="nav-item">
+          <router-link tag="li" :to="'/'" :ref="'/'" class="nav-item">
             <a class="nav-link">Inicio</a>
           </router-link>
         </ul>
