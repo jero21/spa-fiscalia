@@ -28,9 +28,9 @@ export default {
   },
   mounted () {
     let vm = this
-    causaService.query().then(data => {
+    causaService.query().then(function (data) {
       vm.causas = data.body
-    }, err => {
+    }, function (err) {
       if (err.status) {
         this.$message.error('Error: ' + err.body.error)
       }
@@ -38,6 +38,5 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 </style>

@@ -11,6 +11,8 @@ module.exports = {
   entry: {
     app: [
       'babel-polyfill',
+      'event-source-polyfill', 
+      'eventsource-polyfill',
       './src/main.js'
     ]
   },
