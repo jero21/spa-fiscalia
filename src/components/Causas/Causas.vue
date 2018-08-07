@@ -8,9 +8,17 @@
       <data-tables :data='causas'>
         <el-table-column prop="RUC" label="RUC" sortable="custom">
         </el-table-column>
-        <el-table-column prop="fecha_ingreso" label="Fecha" sortable="custom">
+        <el-table-column prop="RUE" label="RUE" sortable="custom">
         </el-table-column>
-        <el-table-column prop="nombre_fiscal" label="Fiscal" sortable="custom">
+        <el-table-column prop="tipo_especie" label="Tipo especie" sortable="custom">
+        </el-table-column>
+        <el-table-column prop="sub_tipo_especie" label="Tipo especie" sortable="custom">
+        </el-table-column>
+        <el-table-column prop="descripcion" label="Descripción" sortable="custom">
+        </el-table-column>
+        <el-table-column prop="fecha_incautacion" label="Incautación" sortable="custom">
+        </el-table-column>
+        <el-table-column prop="fecha_ingreso" label="Ingreso" sortable="custom">
         </el-table-column>
       </data-tables>
     </div>

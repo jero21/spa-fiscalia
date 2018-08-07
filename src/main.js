@@ -2,17 +2,18 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'es6-promise/auto'
 require('es6-promise').polyfill()
+import 'polyfill.min.js'
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 import App from './App'
 import router from './router'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'polyfill.min.js'
 import DataTables from 'vue-data-tables'
 import lang from 'element-ui/lib/locale/lang/es'
 import locale from 'element-ui/lib/locale'

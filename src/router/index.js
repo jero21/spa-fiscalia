@@ -9,15 +9,12 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      component: Inicio,
-      children: [
-        {
-          path: 'crear',
-          component: CausasForm
-        }
-      ]
+      component: Inicio
+    },
+    {
+      path: 'crear',
+      component: CausasForm
     }
-    // { path: '*', component: Inicio }
   ]
 })
 
