@@ -1,10 +1,10 @@
 import ApiService from './Api.service.js'
 
-class CausaService extends ApiService {
+class EspecieService extends ApiService {
   constructor (endpoint) {
     super(endpoint)
     this.name = endpoint
   }
 }
 
-export const causaService = new CausaService('causa{/id}')
+export const especieService = new EspecieService('especie{/id}')

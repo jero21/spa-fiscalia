@@ -12,7 +12,7 @@ const router = new Router({
       component: Inicio
     },
     {
-      path: 'crear',
+      path: '/crear',
       component: CausasForm
     }
   ]

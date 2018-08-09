@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import {causaService} from '@/services/Causa.service'
+import {especieService} from '@/services/Especie.service'
 export default {
   data () {
     return {
@@ -36,11 +36,11 @@ export default {
   },
   mounted () {
     let vm = this
-    causaService.query().then(function (data) {
+    especieService.query().then(function (data) {
       vm.causas = data.body
     }, function (err) {
       if (err.status) {
-        this.$message.error('Error: ' + err.body.error)
+        console.log(err)
       }
     })
   }

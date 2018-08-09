@@ -5,7 +5,7 @@ Vue.use(VueResource)
 
 class ApiConnect {
   constructor (route) {
-    this.resource = Vue.resource(process.env.address.api + route)
+    this.resource = Vue.resource('http://localhost:8080/prueba_laravel/public/api/' + route)
   }
   getResource () {
     return this.resource
